@@ -48,20 +48,6 @@ if userKey == correctKey then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/thienvienchien/Leo-BloxFruits/refs/heads/main/LEOHUB%20BLOX%20FRUITS.lua"))(Settings)
         end
     })
-
-    AddButton(Tab1o, {
-      Name = "LeoMisterHub-SOON",
-      Callback = function()
-          loadstring(game:HttpGet(""))(Settings)
-      end
-  })
-
-    AddButton(Tab1o, {
-     Name = "LeoMisterHub-SOON",
-    Callback = function()
-        loadstring(game:HttpGet("Link"))(Settings)
-    end
-  })
     
       else
       

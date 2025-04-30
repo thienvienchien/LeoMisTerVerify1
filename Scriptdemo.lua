@@ -41,8 +41,6 @@ if userKey == correctKey then
     -- Tạo tab mới trong UI
     local Tab1o = MakeTab({Name = "Script Lua"})
     
-    local Tab2o = MakeTab({Name = "information about lua script"})
-    
     -- Tạo một button trong tab mới
     AddButton(Tab1o, {
         Name = "LeoMisterHub-BloxFruits",
@@ -54,7 +52,7 @@ if userKey == correctKey then
     AddButton(Tab1o, {
       Name = "LeoMisterHub-Ficsh",
       Callback = function()
-          loadstring(game:HttpGet("Link"))(Settings)
+          loadstring(game:HttpGet(""))(Settings)
       end
   })
 
@@ -64,23 +62,8 @@ if userKey == correctKey then
         loadstring(game:HttpGet("Link"))(Settings)
     end
   })
-
-  ----------------------------------------------tab2
-    AddButton(Tab2o, {
-        Name = "This is a lua version that helps players do things in the game easier, but with that comes the risk of being banned so we don't encourage you to hack this lua script",
-       Callback = function()
-           loadstring(game:HttpGet("Link"))(Settings)
-       end
-     })
     
-        AddButton(Tab2o, {
-            Name = "here this lua is created by Kun1Gami, This Lua Script Support Many games on Roblox platform!",
-           Callback = function()
-               loadstring(game:HttpGet("Link"))(Settings)
-           end
-         })
-        
-        else
+      else
       
     -- Nếu key sai, không làm gì thêm và in ra thông báo lỗi
     print("!This key failed!")
